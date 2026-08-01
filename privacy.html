@@ -116,6 +116,14 @@ padding:20px;text-decoration:none;color:inherit}
 <td>한 줄 소개</td>
 <td>미입력 가능</td>
 </tr>
+<tr>
+<td><strong>피드 글</strong></td>
+<td>미입력 가능. 200자 이내의 짧은 글. <strong>다른 이용자에게 공개</strong>됩니다</td>
+</tr>
+<tr>
+<td><strong>피드 글 사진</strong></td>
+<td>미입력 가능. 글마다 1장. <strong>흐린 저해상 이미지만 공개</strong>되고 원본은 비공개 저장소에 보관</td>
+</tr>
 </tbody></table></div>
 <h3>1-3. 서비스 이용 과정에서 자동으로 생성·수집되는 정보</h3>
 <ul>
@@ -123,6 +131,7 @@ padding:20px;text-decoration:none;color:inherit}
 <li>매칭·채팅방 기록, 마지막 접속 시각</li>
 <li>하트(앱 내 재화) 획득·사용 내역</li>
 <li>프로필 열람 기록 (누가 누구의 프로필을 열람했는지)</li>
+<li>피드 글 사진 열람 기록 (누가 어떤 글의 사진을 열었는지)</li>
 <li>신고 접수 시: <strong>신고 대상과의 대화 내용 일부</strong>(최대 2,000자)</li>
 </ul>
 <h3>1-4. 수집하지 않는 정보</h3>
@@ -153,6 +162,11 @@ padding:20px;text-decoration:none;color:inherit}
 <th>보관 기간</th>
 <th>근거</th>
 </tr></thead><tbody>
+<tr>
+<td><strong>피드 글·사진</strong></td>
+<td><strong>24시간</strong> (글이 적을 때는 최근 100개까지 유지)</td>
+<td>서비스 정책 — 탈퇴를 기다리지 않고 자동 삭제</td>
+</tr>
 <tr>
 <td>신고·제재 기록</td>
 <td>3년</td>
@@ -234,7 +248,8 @@ padding:20px;text-decoration:none;color:inherit}
 <h2>8. 개인정보의 안전성 확보 조치</h2>
 <ul>
 <li>데이터베이스 <strong>행 수준 보안(RLS)</strong> 적용 — 본인 외에는 타인의 대화·개인정보에 접근할 수 없도록 서버에서 강제</li>
-<li>프로필 <strong>원본 사진은 비공개 저장소</strong>에 보관하며, 열람 권한이 있는 이용자에게만 한시적 주소를 발급</li>
+<li>프로필·피드 글의 <strong>원본 사진은 비공개 저장소</strong>에 보관하며, 열람 권한이 있는 이용자에게만 한시적 주소를 발급</li>
+<li>공개되는 것은 <strong>얼굴을 알아볼 수 없는 흐린 저해상 이미지</strong>뿐이며, 이 이미지로는 원본을 복원할 수 없습니다</li>
 <li>전송 구간 암호화(HTTPS/TLS)</li>
 <li>접근 권한 최소화 및 접근 기록 관리</li>
 </ul>
