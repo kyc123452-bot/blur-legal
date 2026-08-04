@@ -17,7 +17,7 @@ font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",
 .bar{background:var(--card);border-bottom:1px solid var(--rule)}
 .bar .in{max-width:760px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:14px}
 .brand{font-size:19px;font-weight:800;letter-spacing:-.03em;color:var(--blue);text-decoration:none}
-.bar nav{margin-left:auto;display:flex;gap:16px}
+.bar nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-end}
 .bar nav a{font-size:14px;color:var(--ink2);text-decoration:none;font-weight:600}
 .bar nav a:hover,.bar nav a[aria-current]{color:var(--blue)}
 main{max-width:760px;margin:0 auto;padding:36px 20px 80px}
@@ -44,6 +44,12 @@ padding:20px;text-decoration:none;color:inherit}
 .home a:hover{border-color:var(--blue)}
 .home b{display:block;font-size:17px;font-weight:800;letter-spacing:-.02em;margin-bottom:4px}
 .home span{font-size:14px;color:var(--ink2)}
+.callout{margin:18px 0;padding:18px;border-radius:14px;background:var(--wash);color:var(--ink2)}
+.action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin:8px 0 18px;
+padding:0 20px;border-radius:12px;background:var(--blue);color:#fff;text-decoration:none;font-weight:800}
+.action:hover{background:var(--blue-deep)}
+.muted{font-size:14px;color:var(--ink3)}
+@media(max-width:560px){.bar .in{align-items:flex-start;flex-direction:column}.bar nav{margin-left:0;gap:12px}}
 </style>
 </head>
 <body>
@@ -52,6 +58,7 @@ padding:20px;text-decoration:none;color:inherit}
   <nav>
     <a href="./terms.html" aria-current="page">이용약관</a>
     <a href="./privacy.html">개인정보 처리방침</a>
+    <a href="./support.html">고객지원</a>
   </nav>
 </div></div>
 <main>
